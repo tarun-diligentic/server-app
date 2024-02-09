@@ -44,6 +44,8 @@ router.post(
 
 router.get('/post/:postId', isAuth, feedController.getPost);
 
+router.get('/hello-posts', isAuth, feedController.helloPost);
+
 router.put(
   '/post/:postId',
   isAuth,

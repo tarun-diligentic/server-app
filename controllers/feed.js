@@ -130,6 +130,15 @@ exports.getPost = (req, res, next) => {
     });
 };
 
+exports.helloPost = (req, res, next) => {
+  try{
+    res.status(200).json({ message: "Yeah Buddy!!" });
+  }catch(error){
+    console.log(error)
+    res.status(400).json({ message: "Where are you now !!" });
+  }
+};
+
 exports.updatePost = (req, res, next) => {
   const postId = req.params.postId;
   const errors = validationResult(req);
