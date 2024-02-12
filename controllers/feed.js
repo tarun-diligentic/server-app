@@ -133,7 +133,7 @@ exports.getPost = (req, res, next) => {
 exports.helloPost = (req, res, next) => {
   try{
     console.log("HELLO POST API EXECUTED")
-    res.status(200).json({ message: "Yeah Buddy!!" });
+    res.status(200).json({ message: "HOSTING SUCCESSFULL" });
   }catch(error){
     console.log(error)
     res.status(400).json({ message: "Where are you now !!" });
