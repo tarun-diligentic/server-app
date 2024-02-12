@@ -133,7 +133,8 @@ exports.getPost = (req, res, next) => {
 exports.helloPost = (req, res, next) => {
   try{
     console.log("HELLO POST API EXECUTED")
-    res.status(200).json({ message: "HOSTING SUCCESSFULL" });
+    // res.status(200).json({ message: "HOSTING SUCCESSFULL" });
+    throw new Error("ERROR THROWN MANUALLY")
   }catch(error){
     console.log(error)
     res.status(400).json({ message: "Where are you now !!" });
