@@ -132,7 +132,7 @@ exports.getPost = (req, res, next) => {
 
 exports.helloPost = (req, res, next) => {
   try{
-    res.status(200).json({ message: "HOSTING succesfull." });
+    res.status(200).json({ message: "HOSTING SUCCESSFULL." });
   }catch(error){
     console.log(error)
     res.status(400).json({ message: "Where are you now !!" });
